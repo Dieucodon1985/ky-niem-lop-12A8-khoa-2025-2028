@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lời nhắn | Kỷ niệm lớp 12A8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body id="top">
+    <div class="announcement">Một lời nhắn nhỏ có thể làm ngày ai đó vui hơn ✦</div>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">12A8</span><span>KỶ NIỆM <b>LỚP 12A8</b></span></a>
+      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="thanh-vien.html">Thành viên</a>
+        <a href="hoat-dong.html">Hoạt động</a>
+        <a href="album.html">Album ảnh</a>
+        <a href="video.html">Video</a>
+        <a class="active" href="loi-nhan.html">Lời nhắn</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero"><span class="eyebrow">A NOTE FOR OUR CLASS</span>
+        <h1>Gửi 12A8 <em>thân thương</em></h1>
+        <p>Viết điều bạn muốn lưu lại. Những lời nhắn sẽ được lưu trên trình duyệt đang sử dụng.</p>
+      </section>
+      <section class="section wrap message-layout">
+        <form class="message-form" id="messageForm"><span class="eyebrow">WRITE YOUR NOTE</span>
+          <h2>Để lại lời nhắn</h2>
+          <label>Tên của bạn<input id="senderName" maxlength="40" placeholder="Ví dụ: Minh Anh" required></label><label>Lời nhắn<textarea id="messageText" rows="5" maxlength="500" placeholder="Mình muốn nói với 12A8 rằng..." required></textarea></label>
+          <div class="form-bottom"><small id="charCount">0/500 ký tự</small>
+            <button class="btn btn-primary" type="submit">Gửi lời nhắn ♡</button>
+          </div>
+          <p class="form-feedback" id="formFeedback" role="status"></p>
+        </form>
+        <div class="message-wall">
+          <div class="section-heading">
+            <div><span class="eyebrow">WALL OF LOVE</span>
+              <h2>Lời nhắn <em>đã gửi</em></h2>
+            </div>
+            <button class="clear-btn" id="clearMessages" type="button">Xóa lời nhắn trên máy này</button>
+          </div>
+          <div id="messageList" class="message-list">
+            <p class="muted">Chưa có lời nhắn nào. Hãy là người đầu tiên nhé!</p>
+          </div>
+        </div>
+      </section>
+      <section class="wrap privacy-note">🔒 Lưu ý: Bản website HTML tĩnh này lưu lời nhắn bằng localStorage, chỉ hiển thị trên cùng trình duyệt/thiết bị. Muốn mọi người cùng xem lời nhắn trên Internet, cần thêm máy chủ hoặc dịch vụ cơ sở dữ liệu.</section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner footer-messages">
+        <a class="brand" href="index.html"><span class="brand-mark">12A8</span><span>KỶ NIỆM <b>LỚP 12A8</b></span></a>
+        <p class="copyright-line">© <span class="copyright-year"></span> 12A8. Bản quyền đã được bảo lưu.</p>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

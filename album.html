@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Album ảnh | Kỷ niệm lớp 12A8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body id="top">
+    <div class="announcement">Một tấm hình — ngàn điều muốn kể ✦</div>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">12A8</span><span>KỶ NIỆM <b>LỚP 12A8</b></span></a>
+      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="thanh-vien.html">Thành viên</a>
+        <a href="hoat-dong.html">Hoạt động</a>
+        <a class="active" href="album.html">Album ảnh</a>
+        <a href="video.html">Video</a>
+        <a href="loi-nhan.html">Lời nhắn</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero"><span class="eyebrow">THE PHOTO WALL</span>
+        <h1>Album <em>thanh xuân</em></h1>
+        <p>Chọn một tấm hình, chạm để xem lớn hơn và cùng nhớ lại ngày hôm ấy.</p>
+      </section>
+      <section class="section wrap">
+        <div class="filter-row">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="class">Trong lớp</button>
+          <button class="filter-btn" data-filter="friends">Bạn bè</button>
+          <button class="filter-btn" data-filter="events">Sự kiện</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="gallery-item tall" data-category="class" data-full="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=700&q=80" alt="Trong lớp"><span>Những giờ học thân quen</span></button>
+          <button class="gallery-item" data-category="friends" data-full="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80" alt="Bạn bè"><span>Chúng mình</span></button>
+          <button class="gallery-item" data-category="events" data-full="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=80" alt="Sự kiện"><span>Ngày hội của lớp</span></button>
+          <button class="gallery-item" data-category="class" data-full="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Lớp học"><span>Góc lớp mình</span></button>
+          <button class="gallery-item" data-category="friends" data-full="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Nhóm bạn"><span>Đi đâu cũng có nhau</span></button>
+          <button class="gallery-item" data-category="events" data-full="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=90"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=700&q=80" alt="Tốt nghiệp"><span>Ngày trưởng thành</span></button>
+        </div>
+        <p class="tip">💡 Để dùng ảnh lớp mình: chép ảnh vào thư mục <code>assets/images</code>, rồi thay đường dẫn ảnh trong <code>album.html</code>.</p>
+      </section>
+    </main>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Đóng">×</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Ảnh trước">‹</button>
+      <img src="" alt="Ảnh phóng to">
+      <button class="lightbox-nav lightbox-next" aria-label="Ảnh tiếp theo">›</button>
+    </div>
+    <footer class="footer">
+      <div class="wrap footer-inner footer-album">
+        <a class="brand" href="index.html"><span class="brand-mark">12A8</span><span>KỶ NIỆM <b>LỚP 12A8</b></span></a>
+        <p class="copyright-line">© <span class="copyright-year"></span> 12A8. Bản quyền đã được bảo lưu.</p>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
