@@ -1214,7 +1214,7 @@ font-size: 18px;
 }
 
 body {
-  background-color: #87CEEB rgb(135, 206, 235);
+  background-color: #87CEEB rgba(135, 206, 235);
   min-height: 100vh;
   padding: 10px; /* Thêm chút lề để không dính viền màn hình */
 }
