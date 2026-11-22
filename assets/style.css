@@ -1186,3 +1186,23 @@ body {
     font-family: Arial, sans-serif;
     letter-spacing: 0.5px;
 }
+/* Áp dụng cho màn hình ≤ 575.98px — Điện thoại */
+@media (max-width: 575.98px) {
+  body {
+    background: lightblue;
+    font-size: 16px;
+  }
+  .container {
+    width: 100% !important;
+    padding: 10px;
+  }
+}
+.box {
+  max-width: 400px; /* Không vượt quá 400px */
+  width: 100%;      /* Nhưng trên màn hình nhỏ thì chiếm toàn bộ */
+}
+font-size: 18px;
+
+@media (max-width: 575.98px) {
+  font-size: 16px;
+}
