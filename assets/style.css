@@ -1206,3 +1206,54 @@ font-size: 18px;
 @media (max-width: 575.98px) {
   font-size: 16px;
 }
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #87CEEB;
+  min-height: 100vh;
+  padding: 10px; /* Thêm chút lề để không dính viền màn hình */
+}
+
+/* Khối chứa tất cả các thẻ */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Định dạng từng thẻ cá nhân */
+.card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  aspect-ratio: 9 / 16; /* Giữ tỉ lệ giống thẻ dọc điện thoại */
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+}
+
+/* 📱 Điện thoại — hiển thị 1 cột, thẻ đầy rộng */
+@media (max-width: 576px) {
+  body {
+    padding: 8px;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr; /* 1 cột trên di động */
+    gap: 12px;
+  }
+  
+  .card {
+    max-width: 340px;
+    width: 100%;
+  }
+}
+
